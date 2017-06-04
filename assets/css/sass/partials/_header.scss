@@ -1,0 +1,82 @@
+@import "navbar";
+
+header {
+	background-color: $heading-background-color;
+	height: 100vh;
+	width: 100%;
+	 overflow-x: hidden;
+	.media-header {		
+		background-color: #FFF;
+		min-height: 27px;
+		@include contentMaxWidth($content-max-width);	
+		h2 {
+			color: $heading-h2-color;
+			font-size: $heading-h2-size;
+			font-family: $font-fam-open;
+			font-weight:$bold;
+		}
+		p {
+			@include headingFormat();
+		}
+		.vertical-align {
+			 padding-top:28px;
+		}
+		.social-media {
+	        text-align: center;
+	        ul {
+	            @include contentMaxWidth($heading-media-align);           
+	        }
+	        i {
+	            color: $heading-media-color;	
+	            padding-left: 50%;            
+	        }        
+	        i.fa-3x {
+            	font-size: 3.5em ;
+
+            }
+	    }		
+	}
+}
+
+@media screen and (max-width: 940px) {
+	header {
+		.media-header {		
+			.vertical-align {
+				padding-top:15px;
+			}
+			.social-media {	      
+		        i.fa-3x {
+		        	padding-left: 50%;   
+
+		        }
+		    }
+		}
+	} 
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		height: auto !important;
+		.media-header {		
+			.social-media {	      
+		        i.fa-3x {
+		        	font-size: 2.5em !important ;
+		        }
+		    }	
+		}	
+	}   
+}
+
+@media screen and (max-width: 576px) {
+	header {
+		height: auto !important;
+		.media-header {		
+			.social-media {	      
+		        i.fa-3x {
+		        	font-size: 2em !important ;
+		        	padding-left: 15%;   
+		        }
+		    }	
+		}	
+	}   
+}

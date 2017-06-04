@@ -1,0 +1,26 @@
+
+@mixin img-responsive() {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	width: 100% \9;
+}
+
+@mixin contentPadding($margin) {
+	padding-right:$margin;
+	padding-left:$margin;
+}
+
+@mixin headingFormat() {
+	color: $heading-text-color;
+	font-size: $base-font-size;
+}
+@mixin contentMaxWidth($width) {
+	max-width:$width;
+	margin-left:auto;
+	margin-right:auto;
+}
+@mixin contentMargintb($width) {
+	margin-top:$width;
+	margin-bottom:$width;
+}

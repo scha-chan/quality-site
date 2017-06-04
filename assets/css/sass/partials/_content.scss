@@ -1,0 +1,37 @@
+
+@import "header";
+@import "footer";
+@import "tabs";
+
+body {
+	background-color: $body-background;
+	font-family: $font-fam-open;
+}
+
+section {
+	@include contentMaxWidth($content-max-width);	
+}
+
+.shadow {
+  -moz-box-shadow:    0px 0px 5px 0px #222;
+  -webkit-box-shadow: 0px 0px 5px 0px #222;
+  box-shadow:         0px 0px 5px 0px #222;
+}
+
+.content-inner {
+	margin-top: $margin-lg;
+	margin-bottom: $margin-lg;
+}
+// colour
+.content-heading {
+	background-color: $heading-background-color;
+	color: $heading-text-color;
+}
+.content-margin {
+	height:90px;
+}
+
+section {
+	margin-top: 15px;
+	margin-bottom:15px;
+}

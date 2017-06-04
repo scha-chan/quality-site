@@ -1,0 +1,26 @@
+body {
+	background-color: #000;
+}
+header nav {
+	background-color: #1e1e1e;
+	height: 53px;
+}
+
+header nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	list-style: none;
+	padding: 10px;
+	color: #FFF;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+	height: 98px;
+	padding: 28px 28px 10px 28px;
+}

@@ -1,0 +1,49 @@
+header {
+	nav.navbar-default {
+		background-color: $navbar-background-color;
+		height: $navbar-height;			
+	}
+	nav {
+		background-color: $navbar-background-color;
+		height: $navbar-height;	
+		.nav-content {
+			@include contentMaxWidth($content-max-width);	
+		}
+		a {
+			color: $navbar-color !important;
+			font-size: $base-font-size !important;
+			font-family: $font-fam-open !important;				
+		}
+		.navbar-collapse {
+			$navbar-background-color: $navbar-background-color;
+		}
+
+		a:hover {
+			color: $footer-background-color !important;
+			background-color: $footer-text-color !important;
+			font-size: $base-font-size !important;
+			font-family: $font-fam-open !important;	
+		}
+		.active a {
+			font-size: $base-font-size !important;
+			font-family: $font-fam-open !important;	
+		}
+
+		img {
+			margin-right:15%;
+			height:160%;
+		}
+		.navbar-header a.navbar-brand:hover{
+			background:none;
+		}
+		.navbar-nav {
+			background-color: $navbar-background-color;
+			margin:0;
+		}
+		.navbar-nav > li > a {
+			padding-top: 15px;
+		}
+	}
+
+}
+

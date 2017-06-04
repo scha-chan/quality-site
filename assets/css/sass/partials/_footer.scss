@@ -1,0 +1,27 @@
+
+footer {
+    height: $footer-height ;
+    padding: 28px 28px 10px 28px;
+    background-color: $footer-background-color;
+
+    .content {
+        @include contentMaxWidth($content-max-width);   
+    }
+    .social-media {
+        text-align: center;
+        ul {
+            @include contentMaxWidth($heading-media-align);           
+        }
+        i {
+            color: #FFF;
+            font-size: 18px;
+        }        
+    }
+    .copyright {
+        color: #CCC !important;
+        font-family: $font-fam-open !important; 
+        font-size: $footer-copyright;
+        background-color: footer-background-color;
+        text-align: center;
+    }
+}

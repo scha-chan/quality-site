@@ -1,0 +1,20 @@
+// Variables
+@import "partials/base";
+
+@charset "UTF-8";
+
+// Bootstrap
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Partials
+@import "partials/typography";
+@import "partials/carousel";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/content";
+
+// Font Aweasome
+@import "fontAwesome/font-awesome";
+
+
+
